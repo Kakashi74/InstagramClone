@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_center_stuff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/image_change_profile"
+                android:src="@drawable/ic_person"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/change_photo"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/image_change_profile"
+                android:text="Change Photo"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/change_photo"
+            android:id="@+id/relative_bottom_stuff"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/boreders"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/profile_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_person"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="textNoSuggestions"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/relative_bottom_stuff"
+                android:id="@+id/relative_bottom_stuff2"
+                android:background="@drawable/boreders"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/user_Bio"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_bio"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Bio"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:inputType="textNoSuggestions"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relative_bottom_stuff2"
+                android:id="@+id/relative_bottom_stuff3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boreders"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/user_contacts"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_phone"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Phone Number"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:inputType="textPhonetic"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relative_bottom_stuff3"
+                android:id="@+id/relative_bottom_stuff4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boreders"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/email_profile"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_email"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Email"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relative_bottom_stuff4"
+                android:id="@+id/relative_bottom_stuff5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boreders"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/user_city"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_location"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your City"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>
